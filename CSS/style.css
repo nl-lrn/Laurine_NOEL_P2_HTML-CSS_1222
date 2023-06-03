@@ -1,0 +1,591 @@
+/* 
+couleurs à utiliser dans la maquette
+#0065FC : bleu roi
+#DEEBFF : bleu ciel
+#D9D9D9 : gris
+#F2F2F2 : gris
+*/
+
+
+/* CODE GÉNÉRAL */
+/* ** DESKTOP ** */
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    max-width: 1400px;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;
+}
+
+body {
+    margin: 30px 30px 0px 30px;
+
+}
+
+/* *** HEADER *** */
+header {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 30%;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+}
+
+nav a:hover {
+    color: #0065FC;
+    border-top: #0065FC solid 2px;
+    border-bottom: transparent solid 2px
+}
+
+/* *** HEADER *** */
+
+/* *** MAIN *** */
+/* SECTION FORMULAIRE ET FILTRES */
+h1 {
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+form {
+    display: flex;
+}
+
+form div {
+    border-radius: 15px 0 0 15px;
+    border: #F2F2F2 solid 1px;
+    padding: 2px;
+}
+
+input {
+    padding: 9px;
+    border: none;
+}
+
+.fa-location-dot {
+    padding: 8px 12px 8px 12px;
+}
+
+.bg-grey {
+    background-color: #F2F2F2;
+}
+
+.bg-blue {
+    background-color: #0065FC;
+    color: white;
+    font-weight: bolder;
+    border-radius: 0 15px 15px 0;
+    border: none;
+    padding: 10px;
+}
+
+.fa-magnifying-glass {
+    visibility: hidden;
+}
+
+.filter {
+    display: flex;
+    align-items: flex-end;
+    padding: 20px 0;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul div {
+    display: flex;
+}
+
+a[title] {
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    border-radius: 25px;
+    border: #F2F2F2 solid 2px;
+    padding: 10px;
+    margin: 10px;
+}
+
+a[title]:hover {
+    background-color: #DEEBFF;
+}
+
+.blue {
+    color: #0065FC;
+}
+
+.grey {
+    color: #F2F2F2;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.info i {
+    border: 2px solid #F2F2F2;
+    border-radius: 30px;
+    width: 24px;
+    height: 24px;
+    padding: 10px 0px 5px 15px;
+}
+
+span {
+    margin-left: 15px;
+}
+
+/* SECTION FORMULAIRE ET FILTRES */
+
+/* SECTIONS HÉBERGEMENTS ET POPULAIRES */
+.cards {
+    display: flex;
+    margin-top: 30px;
+}
+
+.hebergements h2,
+.populaire h2,
+.activities h2 {
+    margin-left: 20px;
+}
+
+/* SECTION HÉBERGEMENTS */
+
+.hebergements,
+.populaire {
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.hebergements {
+    width: 70%;
+    margin-right: 30px;
+}
+
+.hebergements button {
+    border: none;
+    font-weight: bolder;
+    font-size: larger;
+    margin: 10px 0 10px 20px;
+    background-color: #F2F2F2;
+}
+
+.hebergements article div {
+    margin-left: 10px;
+}
+
+.hebergements div p,
+.hebergements div h3 {
+    margin: 3px;
+}
+
+.cards-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 25px;
+}
+
+.cards-main img {
+    width: 92%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.cards-main article {
+    width: 30%;
+    height: auto;
+}
+
+/* SECTION HÉBERGEMENTS */
+
+/* SECTIONS HÉBERGEMENTS, POPULAIRES ET ACTIVITÉS */
+.cards-main a,
+.cards-populaires a,
+.cards-activities a {
+    text-decoration: none;
+    color: black;
+}
+
+.cards-main article,
+.cards-populaires article,
+.cards-activities article {
+    background-color: white;
+    margin: 9px 5px 9px 5px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* SECTIONS HÉBERGEMENTS, POPULAIRES ET ACTIVITÉS */
+
+/* SECTION POPULAIRE */
+.populaire {
+    flex-direction: column;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.populaire_infos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards-populaires {
+    width: 95%;
+}
+
+.cards-populaires img {
+    width: 40%;
+    height: 130px;
+    padding: 12px 5px 12px 12px;
+    border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
+}
+
+.cards-populaires a {
+    display: flex;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* icones étoiles */
+.fa-star {
+    font-size: 12px;
+}
+
+/* SECTION POPULAIRE */
+
+/* SECTION ACTIVITÉS */
+.activities {
+    margin-top: 50px;
+}
+
+.cards-activities {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards-activities article {
+    width: 100%;
+    height: auto;
+    margin: 0 20px 0 20px;
+}
+
+.cards-activities img {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+}
+
+article div {
+    margin: 0 10px 7px 5px;
+}
+
+.cards-activities h3 {
+    padding-left: 15px;
+}
+
+/* SECTION ACTIVITÉS */
+/* *** MAIN *** */
+
+/* *** FOOTER ***  */
+.footer {
+    max-width: 1339px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+
+.footer aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+}
+
+/* *** FOOTER *** */
+/* ** DESKTOP ** */
+
+/* ** TABLETTE ** */
+/* modifications à faire en tablette : 
+- enlever les bordures sur les liens navs
+- mettre en display la section hébergements et les plus populaires l'une sur l'autre
+- mettre la section plus populaire en horizontale et plus en verticale
+- réduire la taille des cards activités 
+ */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    body {
+        margin: 30px 50px 0px 50px;
+    }
+
+    /* *** HEADER *** */
+    nav a:hover {
+        border: transparent;
+    }
+
+    /* *** HEADER *** */
+
+    /* *** MAIN *** */
+    /* SECTION FORMULAIRE ET FILTRES */
+    .filter {
+        align-items: center;
+    }
+
+    ul {
+        flex-wrap: wrap;
+    }
+
+    li {
+        padding: 15px;
+    }
+
+    /* SECTION FORMULAIRE ET FILTRES */
+
+    /* SECTIONS HÉBERGEMENTS ET POPULAIRES */
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* SECTION HÉBERGEMENTS */
+    .hebergements {
+        width: auto;
+        margin: 0 0 25px 0;
+    }
+
+    /* SECTION HÉBERGEMENTS */
+
+    /* SECTION POPULAIRE */
+    .populaire {
+        width: 96%;
+        margin: 25px 0 0 0;
+    }
+
+    .cards-populaires {
+        display: flex;
+        width: 100%;
+        margin-left: 12px;
+    }
+
+    .cards-populaires article {
+        width: 32%;
+        height: auto;
+    }
+
+    .cards-populaires article div {
+        margin: 0 0 0 5px;
+        padding: 0 0 5px 0;
+    }
+
+    /* SECTION POPULAIRE */
+
+    /* SECTION ACTIVITÉS */
+    .activities h2 {
+        margin-left: 25px;
+    }
+
+    .cards-activities article {
+        width: 22%;
+        margin: 0 10px 0 10px;
+    }
+
+    .cards-activities img {
+        height: 185px;
+    }
+
+    /* SECTION ACTIVITÉS */
+    /* *** MAIN *** */
+}
+
+/* ** TABLETTE ** */
+
+/* ** MOBILE ** */
+
+/*  modifications à faire en portable :
+ - center le logo
+ - mettre les liens nav en dessous avec border-bottom
+ - mettre en display les filtres 2x2
+ - section plus populaire passe en première avec un fond gris
+ - puis hébergement sur fond blanc en display column
+ - puis activités aussi en display column
+ - et footer aussi en display and (min-width:320px)*/
+
+@media screen and (max-width:767px) {
+    body {
+        margin: 0;
+    }
+
+    /* *** HEADER *** */
+    .logo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 25%;
+        margin-bottom: 30px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    /* *** HEADER *** */
+
+    /* *** MAIN *** */
+    /* SECTION FORMULAIRE ET FILTRES */
+    .header {
+        margin-left: 15px;
+    }
+
+    .rechercher {
+        display: none;
+    }
+
+    .fa-magnifying-glass {
+        visibility: visible;
+    }
+
+    nav a:hover {
+        color: #0065FC;
+        border-bottom: #0065FC solid 4px;
+        border-top: transparent solid 2px;
+        width: max-content;
+    }
+
+    .filter {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    li {
+        padding: 15px;
+    }
+
+    li a {
+        font-size: 1.3rem;
+    }
+
+    .info i {
+        width: 14px;
+        height: 8px;
+        padding: 4px 7px 15px 12px;
+    }
+
+    /* SECTION FORMULAIRE ET FILTRES */
+
+    /* SECTIONS HÉBERGEMENTS ET POPULAIRES */
+    .cards {
+        flex-direction: column-reverse;
+    }
+
+    /* SECTION HÉBERGEMENTS */
+    .cards-main {
+        flex-direction: column;
+    }
+
+    .cards-main article {
+        width: auto;
+    }
+
+    .cards-main img {
+        width: 95%;
+    }
+
+    .hebergements {
+        width: auto;
+        margin: 0;
+        background-color: transparent;
+    }
+
+    .hebergements button {
+        visibility: hidden;
+    }
+
+    /* SECTION HÉBERGEMENTS */
+
+    /* SECTION POPULAIRE */
+    .populaire {
+        margin: 0;
+        width: auto;
+        flex-wrap: wrap;
+        align-items: center;
+        border-radius: 0;
+    }
+
+    /* SECTION POPULAIRE */
+
+    /* SECTION ACTIVITÉS */
+    .cards-activities {
+        flex-direction: column;
+    }
+
+    .cards-activities article {
+        width: auto;
+        height: auto;
+        margin: 20px;
+    }
+
+    .cards-activities img {
+        height: 200px;
+    }
+
+    /* SECTION ACTIVITÉS */
+    /* *** MAIN *** */
+
+    /* *** FOOTER *** */
+    .footer {
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    .footer aside {
+        margin: 15px;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    /* *** FOOTER *** */
+    /* ** MOBILE ** */
+
+}
